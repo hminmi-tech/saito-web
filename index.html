@@ -3,249 +3,2081 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="さいとうひろみ - 15年の飲食経験とAI活用で、あなたの開業・経営をサポート。オーガニック食品店も運営中。栃木県。">
-    <title>となりの個人事業主サポート｜さいとう ひろみ</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="となりの個人事業主サポート×さいとう日用品店。15年の飲食経験を活かした開業サポート・AI講座と、オーガニック食品店・料理教室を運営。栃木県">
+    <meta name="keywords" content="飲食店開業,カフェ開業,ChatGPT講座,個人事業主,コンサル,オーガニック食品,料理教室,栃木県">
+    <title>となりの個人事業主サポート × さいとう日用品店 | ひろみ</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>となりの個人事業主サポート</h1>
-                    <p class="logo-sub">by さいとう ひろみ</p>
-                </div>
-                <nav class="nav">
-                    <button class="nav-toggle" aria-label="メニュー">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-menu">
-                        <li><a href="index.html" class="active">ホーム</a></li>
-                        <li><a href="consulting.html">飲食店サポート</a></li>
-                        <li><a href="organic.html">オーガニック事業</a></li>
-                        <li><a href="profile.html">プロフィール</a></li>
-                        <li><a href="contact.html" class="btn-nav">お問い合わせ</a></li>
-                    </ul>
-                </nav>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="さいとう日用品店" class="logo-image">
+                <span>さいとう日用品店</span>
             </div>
-        </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">ホーム</a></li>
+                    <li class="nav-item"><a href="#business" class="nav-link">事業紹介</a></li>
+                    <li class="nav-item"><a href="#consulting" class="nav-link">コンサル</a></li>
+                    <li class="nav-item"><a href="#organic" class="nav-link">オーガニック</a></li>
+                    <li class="nav-item"><a href="#profile" class="nav-link">プロフィール</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
-    <!-- ヒーローセクション -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">15年の飲食経験と、<br>新しいチャレンジ。</h2>
-                <p class="hero-subtitle">あなたの"やりたい"を一緒に形にします</p>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    15年の飲食経験と、<br>新しいチャレンジ。
+                </h1>
+                <p class="hero-subtitle">
+                    あなたの<span class="highlight">"やりたい"</span>を<br class="mobile-break">一緒に形にします
+                </p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-check"></i> 飲食業15年</span>
+                    <span class="badge"><i class="fas fa-check"></i> カフェ経営6年</span>
+                    <span class="badge"><i class="fas fa-check"></i> AI活用支援</span>
+                </div>
                 <div class="hero-buttons">
-                    <a href="consulting.html" class="btn btn-primary">飲食店開業・経営サポート</a>
-                    <a href="organic.html" class="btn btn-secondary">オーガニックライフ</a>
+                    <a href="#consulting" class="btn btn-primary">
+                        <i class="fas fa-coffee"></i> 開業サポート
+                    </a>
+                    <a href="#organic" class="btn btn-secondary">
+                        <i class="fas fa-leaf"></i> オーガニック事業
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- 実績セクション -->
-    <section class="achievements">
-        <div class="container">
-            <div class="achievements-grid">
-                <div class="achievement-item">
-                    <div class="achievement-number">15年</div>
-                    <div class="achievement-label">飲食業経験</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-number">6年</div>
-                    <div class="achievement-label">カフェ経営</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-number">現在</div>
-                    <div class="achievement-label">オーガニック食品店経営</div>
-                </div>
-            </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- サービス紹介セクション -->
-    <section class="services-intro">
+    <!-- Business Introduction -->
+    <section class="business-intro section" id="business">
         <div class="container">
-            <h2 class="section-title">2つの事業でサポートします</h2>
-            <p class="section-subtitle">実践経験と新しい学びで、あなたのビジネスと生活を応援</p>
+            <div class="section-header">
+                <h2 class="section-title">2つの事業でサポート</h2>
+                <p class="section-subtitle">経験と知識を活かして、あなたの成長を応援します</p>
+            </div>
             
-            <div class="services-grid">
-                <!-- 飲食店サポート事業 -->
-                <div class="service-card service-consulting">
-                    <div class="service-icon">
-                        <i class="fas fa-utensils"></i>
+            <div class="business-cards">
+                <!-- Business 1 -->
+                <div class="business-card" data-aos="fade-up">
+                    <div class="business-icon consulting-icon">
+                        <i class="fas fa-mug-hot"></i>
                     </div>
-                    <h3 class="service-title">飲食店開業・経営サポート</h3>
-                    <p class="service-description">
-                        15年の飲食経験と6年のカフェ経営で培ったノウハウを、あなたの開業・経営に活かします。
-                        AI活用で業務効率化もサポート。
+                    <h3 class="business-card-title">となりの個人事業主サポート</h3>
+                    <p class="business-card-description">
+                        15年の飲食経験を活かした開業支援・経営コンサルティング。ChatGPT活用講座で業務効率化もサポート。
                     </p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> ChatGPT活用講座（500円）</li>
-                        <li><i class="fas fa-check"></i> お試しコンサル（3,000円）</li>
-                        <li><i class="fas fa-check"></i> 6回コンサルプログラム（100,000円）</li>
-                        <li><i class="fas fa-check"></i> プレミアムコンサル（150,000円）</li>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> ChatGPT活用講座 500円</li>
+                        <li><i class="fas fa-check-circle"></i> お試しコンサル 3,000円</li>
+                        <li><i class="fas fa-check-circle"></i> 6回プログラム 100,000円</li>
+                        <li><i class="fas fa-check-circle"></i> プレミアムコンサル 150,000円</li>
                     </ul>
-                    <a href="consulting.html" class="btn btn-outline">詳しく見る</a>
+                    <a href="#consulting" class="btn btn-outline">詳しく見る</a>
                 </div>
-
-                <!-- オーガニック事業 -->
-                <div class="service-card service-organic">
-                    <div class="service-icon">
+                
+                <!-- Business 2 -->
+                <div class="business-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="business-icon organic-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3 class="service-title">オーガニックライフ事業</h3>
-                    <p class="service-description">
-                        エシカル商品・オーガニック食品を扱う日用品店の運営と、オーガニック食材を使った料理教室を開催。
+                    <h3 class="business-card-title">さいとう日用品店</h3>
+                    <p class="business-card-description">
+                        エシカル商品・オーガニック食品のセレクトショップ。料理教室やEC販売で、健康的なライフスタイルをご提案。
                     </p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> さいとう日用品店（栃木県）</li>
-                        <li><i class="fas fa-check"></i> オーガニック料理教室</li>
-                        <li><i class="fas fa-check"></i> ECショップ（準備中）</li>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> オーガニック食品販売</li>
+                        <li><i class="fas fa-check-circle"></i> 少人数制料理教室</li>
+                        <li><i class="fas fa-check-circle"></i> エシカル商品セレクト</li>
+                        <li><i class="fas fa-check-circle"></i> オンラインショップ営業中</li>
                     </ul>
-                    <a href="organic.html" class="btn btn-outline">詳しく見る</a>
+                    <a href="#organic" class="btn btn-outline">詳しく見る</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 強みセクション -->
-    <section class="strengths">
+    <!-- Consulting Service -->
+    <section class="consulting section" id="consulting">
         <div class="container">
-            <h2 class="section-title">選ばれる理由</h2>
-            <div class="strengths-grid">
-                <div class="strength-item">
-                    <div class="strength-icon">
-                        <i class="fas fa-heart"></i>
+            <div class="section-header">
+                <h2 class="section-title">飲食店開業・経営サポート</h2>
+                <p class="section-subtitle">実践経験に基づく、本当に使えるサポート</p>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="service-grid">
+                <!-- Service 1: ChatGPT講座 -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-badge budget">超お得</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">ChatGPT活用講座</h3>
+                        <div class="service-price">
+                            <span class="price-value">500</span>
+                            <span class="price-unit">円</span>
+                        </div>
                     </div>
-                    <h3>実体験に基づくアドバイス</h3>
-                    <p>理論だけでなく、現場で培った生きたノウハウをお伝えします。成功も失敗も、すべて経験してきました。</p>
+                    <div class="service-body">
+                        <p class="service-description">ゆるっと学ぶAI活用術</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> ChatGPTの基本操作を一緒に学習</li>
+                            <li><i class="fas fa-check"></i> 商品紹介文・SNS投稿文を実際に作成</li>
+                            <li><i class="fas fa-check"></i> オリジナル活用チェックリスト付き</li>
+                            <li><i class="fas fa-check"></i> お茶・お菓子付きのアットホームな雰囲気</li>
+                        </ul>
+                        <div class="service-info">
+                            <p><strong>時間:</strong> 2時間</p>
+                            <p><strong>開催:</strong> 月2回（第1・第3土曜日 14:00-16:00）</p>
+                            <p><strong>対象:</strong> AI初心者・文章作成を楽にしたい方</p>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-primary btn-block">お申込み</a>
+                    </div>
                 </div>
-                <div class="strength-item">
-                    <div class="strength-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
+
+                <!-- Service 2: お試しコンサル -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge popular">人気</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="service-title">お試しコンサル</h3>
+                        <div class="service-price">
+                            <span class="price-value">3,000</span>
+                            <span class="price-unit">円</span>
+                        </div>
                     </div>
-                    <h3>寄り添うサポート</h3>
-                    <p>一人で悩まず、一緒に解決していきましょう。アフターフォローも充実しています。</p>
+                    <div class="service-body">
+                        <p class="service-description">あなたの悩み、聞かせてください</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 60分の個別相談で現状を整理</li>
+                            <li><i class="fas fa-check"></i> 15年の飲食経験×6年のカフェ経営</li>
+                            <li><i class="fas fa-check"></i> 具体的で今日から始められるアドバイス</li>
+                            <li><i class="fas fa-check"></i> 今後の道筋を一緒に考えます</li>
+                        </ul>
+                        <div class="service-info">
+                            <p><strong>時間:</strong> 60分</p>
+                            <p><strong>対象:</strong> 開業検討中・事業の悩みがある方</p>
+                            <p class="special-note"><i class="fas fa-gift"></i> ChatGPT講座参加者は 2,500円</p>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-primary btn-block">お申込み</a>
+                    </div>
                 </div>
-                <div class="strength-item">
-                    <div class="strength-icon">
-                        <i class="fas fa-coins"></i>
+
+                <!-- Service 3: 6回コンサルプログラム -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-badge recommended">おすすめ</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">6回コンサルプログラム</h3>
+                        <div class="service-price">
+                            <span class="price-value">100,000</span>
+                            <span class="price-unit">円</span>
+                        </div>
                     </div>
-                    <h3>手の届きやすい価格</h3>
-                    <p>ChatGPT講座500円から始められる、続けやすい価格設定。分割払いにも対応しています。</p>
+                    <div class="service-body">
+                        <p class="service-description">開業までしっかりサポート</p>
+                        <div class="service-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <span class="step-text">自分軸の明確化</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <span class="step-text">事業設計の基礎</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <span class="step-text">場所・設備・資金</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <span class="step-text">商品・サービス設計</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">5</span>
+                                <span class="step-text">集客・マーケティング</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">6</span>
+                                <span class="step-text">開業準備総仕上げ</span>
+                            </div>
+                        </div>
+                        <ul class="service-features">
+                            <li><i class="fas fa-star"></i> 開業後3ヶ月間のLINE相談無制限</li>
+                            <li><i class="fas fa-star"></i> 1年後フォローアップ面談1回無料</li>
+                            <li><i class="fas fa-star"></i> ひろみのネットワーク紹介</li>
+                        </ul>
+                        <div class="service-info">
+                            <p><strong>時間:</strong> 90分×6回</p>
+                            <p><strong>分割払い:</strong> 月々20,000円×5回</p>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-primary btn-block">お申込み</a>
+                    </div>
                 </div>
-                <div class="strength-item">
-                    <div class="strength-icon">
-                        <i class="fas fa-robot"></i>
+
+                <!-- Service 4: プレミアムコンサル -->
+                <div class="service-card premium" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-badge premium-badge">プレミアム</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="service-title">プレミアムコンサル</h3>
+                        <div class="service-price">
+                            <span class="price-value">150,000</span>
+                            <span class="price-unit">円</span>
+                        </div>
                     </div>
-                    <h3>AI活用の最新知識</h3>
-                    <p>勉強中のAI技術を実務に活かす方法を、初心者にも分かりやすく教えます。</p>
+                    <div class="service-body">
+                        <p class="service-description">実践技術まで身につけます</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 6回コンサル内容すべて含む</li>
+                            <li><i class="fas fa-check"></i> コーヒー作りトレーニング（1回・2時間）</li>
+                            <li><i class="fas fa-check"></i> ケーキ作りトレーニング（1回・3時間）</li>
+                            <li><i class="fas fa-check"></i> より詳しい飲食業界情報提供</li>
+                            <li><i class="fas fa-check"></i> 開業後6ヶ月間のLINE相談</li>
+                        </ul>
+                        <div class="premium-bonus">
+                            <h4><i class="fas fa-gift"></i> プレミアム限定特典</h4>
+                            <ul>
+                                <li>ひろみ直伝のレシピ集プレゼント</li>
+                                <li>おすすめ業者・仕入先リスト</li>
+                                <li>実際に使っていた器具・道具の紹介</li>
+                            </ul>
+                        </div>
+                        <div class="service-info">
+                            <p><strong>時間:</strong> 90分×6回 + 実践トレーニング</p>
+                            <p><strong>分割払い:</strong> 月々25,000円×6回</p>
+                            <p><strong>特におすすめ:</strong> カフェ・喫茶店開業希望者</p>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-primary btn-block">お申込み</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offers -->
+            <div class="special-offers" data-aos="fade-up">
+                <h3 class="offers-title"><i class="fas fa-gift"></i> 特典・割引</h3>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h4>当日申込特典</h4>
+                        <p>お試しコンサル → 6回コンサル<br>お試しコンサル → プレミアム</p>
+                        <span class="offer-discount">3,000円割引</span>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4>紹介割引</h4>
+                        <p>紹介者: 次回サービス10%割引<br>被紹介者: 初回サービス5%割引</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- こんな方におすすめ -->
-    <section class="target-audience">
+    <!-- Organic Business -->
+    <section class="organic section bg-light" id="organic">
         <div class="container">
-            <h2 class="section-title">こんな方におすすめです</h2>
-            <div class="audience-grid">
-                <div class="audience-item">
-                    <div class="audience-emoji">☕</div>
-                    <h3>カフェ・飲食店を開業したい</h3>
-                    <p>開業の夢があるけど、何から始めればいいか分からない方</p>
+            <div class="section-header">
+                <h2 class="section-title">オーガニックライフ事業</h2>
+                <p class="section-subtitle">心と体に優しい、本物の食材と暮らし</p>
+            </div>
+
+            <div class="organic-grid">
+                <!-- Store -->
+                <div class="organic-card" data-aos="fade-up">
+                    <div class="organic-image">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="organic-title">さいとう日用品店</h3>
+                    <p class="organic-description">
+                        エシカル商品とオーガニック食品を扱うセレクトショップ。心を込めて選んだ商品をお届けします。
+                    </p>
+                    <div class="organic-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>営業時間: 11:00-16:00</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-times"></i>
+                            <span>定休日: 土・日・祝</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>栃木県</span>
+                        </div>
+                    </div>
+                    <ul class="organic-features">
+                        <li><i class="fas fa-leaf"></i> 厳選オーガニック食品</li>
+                        <li><i class="fas fa-heart"></i> エシカル商品セレクト</li>
+                        <li><i class="fas fa-smile"></i> 地域に根ざした運営</li>
+                    </ul>
                 </div>
-                <div class="audience-item">
-                    <div class="audience-emoji">💼</div>
-                    <h3>飲食店経営の悩みがある</h3>
-                    <p>売上向上、人手不足、業務効率化など、経営課題を抱えている方</p>
+
+                <!-- Cooking Class -->
+                <div class="organic-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="organic-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="organic-title">料理教室</h3>
+                    <p class="organic-description">
+                        オーガニック食材を使った、体に優しい料理をお教えします。少人数制で丁寧に指導。
+                    </p>
+                    <ul class="organic-features">
+                        <li><i class="fas fa-users"></i> 少人数制でしっかり学べる</li>
+                        <li><i class="fas fa-seedling"></i> オーガニック食材使用</li>
+                        <li><i class="fas fa-calendar-check"></i> 定期開催</li>
+                        <li><i class="fas fa-book-open"></i> 初心者歓迎</li>
+                    </ul>
+                    <div class="organic-cta">
+                        <a href="#contact" class="btn btn-organic">レッスン予約</a>
+                    </div>
                 </div>
-                <div class="audience-item">
-                    <div class="audience-emoji">🤖</div>
-                    <h3>AIを活用したい</h3>
-                    <p>ChatGPTなどのAIツールで業務を効率化したい個人事業主の方</p>
-                </div>
-                <div class="audience-item">
-                    <div class="audience-emoji">🌱</div>
-                    <h3>健康的な暮らしに興味</h3>
-                    <p>オーガニック食品や、体に優しい料理を学びたい方</p>
+
+                <!-- EC Shop -->
+                <div class="organic-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="organic-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="organic-title">オンラインショップ</h3>
+                    <div class="open-badge">
+                        <i class="fas fa-check-circle"></i> 営業中
+                    </div>
+                    <p class="organic-description">
+                        厳選したオーガニック食品を、ご自宅にお届けします。安心・安全な食材で、健康的な食生活を。
+                    </p>
+                    <ul class="organic-features">
+                        <li><i class="fas fa-box"></i> 厳選商品のみ取扱い</li>
+                        <li><i class="fas fa-truck"></i> 全国配送対応</li>
+                        <li><i class="fas fa-shield-alt"></i> 安心・安全の品質管理</li>
+                    </ul>
+                    <div class="organic-cta">
+                        <a href="https://saitonichiyo.base.shop/" target="_blank" rel="noopener noreferrer" class="btn btn-organic">
+                            <i class="fas fa-shopping-cart"></i> オンラインショップへ
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTAセクション -->
-    <section class="cta">
+    <!-- Profile -->
+    <section class="profile section" id="profile">
         <div class="container">
-            <h2 class="cta-title">まずはお気軽にご相談ください</h2>
-            <p class="cta-text">
-                開業の不安、経営の悩み、すべて実体験してきました。<br>
-                一人で悩まず、一緒に解決していきましょう。
-            </p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary btn-large">お問い合わせ</a>
-                <a href="https://www.instagram.com/nichiyouhinten2023/" target="_blank" class="btn btn-secondary btn-large">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
+            <div class="section-header">
+                <h2 class="section-title">プロフィール</h2>
+                <p class="section-subtitle">経験を活かして、あなたをサポート</p>
+            </div>
+
+            <div class="profile-content" data-aos="fade-up">
+                <div class="profile-image">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 class="profile-name">さいとう ひろみ</h3>
+                    <p class="profile-role">個人事業主サポート / オーガニック食品店経営</p>
+                </div>
+
+                <div class="profile-details">
+                    <div class="profile-career">
+                        <h4><i class="fas fa-briefcase"></i> 経歴</h4>
+                        <ul class="career-list">
+                            <li>
+                                <span class="career-icon"><i class="fas fa-circle"></i></span>
+                                <div class="career-content">
+                                    <strong>飲食業経験 15年</strong>
+                                    <p>様々な業態での経験を積み、現場のリアルを知り尽くしています</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="career-icon"><i class="fas fa-circle"></i></span>
+                                <div class="career-content">
+                                    <strong>カフェ経営 6年</strong>
+                                    <p>開業から運営、そして次のステップへの経験を持っています</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="career-icon"><i class="fas fa-circle"></i></span>
+                                <div class="career-content">
+                                    <strong>現在: オーガニック食品店経営</strong>
+                                    <p>新しい挑戦を続けながら、経験を次世代へ</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-skills">
+                        <h4><i class="fas fa-star"></i> 専門分野</h4>
+                        <div class="skills-grid">
+                            <div class="skill-badge">
+                                <i class="fas fa-coffee"></i>
+                                <span>カフェ開業サポート</span>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-chart-line"></i>
+                                <span>飲食店経営コンサル</span>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-robot"></i>
+                                <span>AIパスポート取得</span>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>AI導入サポート</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-message">
+                        <h4><i class="fas fa-heart"></i> メッセージ</h4>
+                        <blockquote>
+                            15年間の飲食業経験、6年間のカフェ経営を経て、現在はこの日用品店を営んでいます。<br><br>
+                            開業の不安、経営の悩み、すべて実体験してきました。<br><br>
+                            一人で悩まず、一緒に解決していきましょう。あなたの「やりたい」を形にするお手伝いをさせてください。
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
+    <!-- Contact -->
+    <section class="contact section bg-light" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">お気軽にご連絡ください</p>
+            </div>
+
+            <div class="contact-content" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h4>Instagram DM</h4>
+                        <p>最新情報はこちらでチェック</p>
+                        <a href="https://instagram.com/nichiyouhinten2023" target="_blank" class="contact-link">
+                            @nichiyouhinten2023 <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4>店頭相談</h4>
+                        <p>さいとう日用品店にお越しください</p>
+                        <div class="store-hours">
+                            <p><i class="fas fa-clock"></i> 11:00-16:00</p>
+                            <p><i class="fas fa-calendar-times"></i> 定休日: 土・日・祝</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 栃木県</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>対応エリア</h4>
+                        <p>栃木県内</p>
+                        <span class="online-badge">
+                            <i class="fas fa-video"></i> オンライン対応可
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">ご興味のあるサービス</label>
+                            <select id="service" name="service">
+                                <option value="">選択してください</option>
+                                <option value="chatgpt">ChatGPT活用講座</option>
+                                <option value="trial">お試しコンサル</option>
+                                <option value="program">6回コンサルプログラム</option>
+                                <option value="premium">プレミアムコンサル</option>
+                                <option value="organic">オーガニック食品店</option>
+                                <option value="cooking">料理教室</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> 送信する
+                        </button>
+                    </form>
+                    <div class="form-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>お問い合わせは、Instagramのダイレクトメッセージでも受け付けております。お気軽にご連絡ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>となりの個人事業主サポート</h3>
-                    <p>by さいとう ひろみ</p>
-                    <p class="footer-description">
-                        15年の飲食経験×AI学習で、<br>
-                        あなたの"やりたい"を一緒に形にします
-                    </p>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="さいとう日用品店" class="logo-image-footer">
+                    <span>さいとう日用品店</span>
                 </div>
-                <div class="footer-section">
-                    <h4>サービス</h4>
-                    <ul>
-                        <li><a href="consulting.html">飲食店サポート</a></li>
-                        <li><a href="organic.html">オーガニック事業</a></li>
-                        <li><a href="profile.html">プロフィール</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>店舗情報</h4>
-                    <p><i class="fas fa-store"></i> さいとう日用品店</p>
-                    <p><i class="fas fa-clock"></i> 11:00-16:00</p>
-                    <p><i class="fas fa-calendar-times"></i> 定休日: 土曜・日曜</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 栃木県</p>
-                </div>
-                <div class="footer-section">
-                    <h4>SNS</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/nichiyouhinten2023/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <p class="footer-note">オンライン相談対応可</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/nichiyouhinten2023" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 となりの個人事業主サポート by さいとう ひろみ. All rights reserved.</p>
+                <p>&copy; 2025 さいとうひろみ / となりの個人事業主サポート × さいとう日用品店. All rights reserved.</p>
+                <p class="footer-links" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                    <a href="https://saitonichiyo.base.shop/" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s;">
+                        <i class="fas fa-shopping-cart"></i> オンラインショップ
+                    </a> | 
+                    <a href="https://instagram.com/nichiyouhinten2023" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s;">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
+/* ========================================
+   RESET & VARIABLES
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette - Nature & Ocean (ロゴベース) */
+    --primary-color: #2D7A6E;        /* Deep Teal (ロゴの濃いグリーン) */
+    --secondary-color: #5BA593;      /* Medium Teal */
+    --accent-color: #8FBC8F;         /* Soft Green (ロゴの明るいグリーン) */
+    --dark-green: #1E5A4F;
+    --light-green: #A8D5BA;
+    --teal-blue: #4A90A4;            /* ロゴのブルー系 */
+    --beige: #F5F5F0;
+    --cream: #FDFCF9;
+    --warm-white: #F9FDFB;
+    --text-dark: #2C3E35;
+    --text-gray: #5A6C62;
+    --border-color: #D5E5DE;
+    --shadow: rgba(45, 122, 110, 0.12);
+    --overlay: rgba(30, 90, 79, 0.7);
+    
+    /* Typography */
+    --font-primary: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+    --font-secondary: 'Noto Sans JP', sans-serif;
+    
+    /* Spacing */
+    --section-padding: 5rem 0;
+    --container-width: 1200px;
+    --border-radius: 12px;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-dark);
+    background-color: var(--cream);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: var(--section-padding);
+}
+
+.bg-light {
+    background-color: var(--warm-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 12px var(--shadow);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-logo .logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-logo i {
+    font-size: 1.75rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--teal-blue) 50%, var(--primary-color) 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 80px;
+}
+
+.hero-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.mobile-break {
+    display: none;
+}
+
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-down i {
+    font-size: 2rem;
+    color: white;
+    opacity: 0.8;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-organic {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-organic:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px var(--shadow);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* ========================================
+   SECTION HEADERS
+======================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   BUSINESS INTRODUCTION
+======================================== */
+
+.business-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.business-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px var(--shadow);
+    border-color: var(--primary-color);
+}
+
+.business-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+
+.consulting-icon {
+    background: linear-gradient(135deg, var(--teal-blue), var(--secondary-color));
+    color: white;
+}
+
+.organic-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    color: white;
+}
+
+.business-card-title {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.business-card-description {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.business-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.business-features li {
+    padding: 0.75rem 0;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.business-features i {
+    color: var(--primary-color);
+    font-size: 1.125rem;
+}
+
+/* ========================================
+   CONSULTING SERVICE
+======================================== */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px var(--shadow);
+}
+
+.service-card.featured {
+    border-color: var(--primary-color);
+}
+
+.service-card.premium {
+    border-color: var(--accent-color);
+    background: linear-gradient(to bottom, #FFF9F0 0%, white 100%);
+}
+
+.service-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: white;
+    z-index: 10;
+}
+
+.service-badge.budget {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+}
+
+.service-badge.popular {
+    background: linear-gradient(135deg, #4ECDC4, #44A08D);
+}
+
+.service-badge.recommended {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
+}
+
+.service-badge.premium-badge {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+}
+
+.service-header {
+    padding: 2.5rem 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    color: white;
+    font-size: 2.5rem;
+}
+
+.service-title {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.service-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.price-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.price-unit {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+}
+
+.service-body {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.service-description {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.service-features li {
+    padding: 0.75rem 0;
+    color: var(--text-gray);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    line-height: 1.6;
+}
+
+.service-features i {
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.service-steps {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background-color: var(--warm-white);
+    border-radius: 8px;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-text {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.service-info {
+    background-color: var(--warm-white);
+    padding: 1.25rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.service-info p {
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+}
+
+.service-info strong {
+    color: var(--text-dark);
+}
+
+.special-note {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.premium-bonus {
+    background: linear-gradient(135deg, #FFF9E6, #FFFCF0);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 2px solid var(--accent-color);
+}
+
+.premium-bonus h4 {
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.premium-bonus ul {
+    list-style: none;
+}
+
+.premium-bonus li {
+    padding: 0.5rem 0;
+    color: var(--text-gray);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.premium-bonus li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.service-footer {
+    padding: 0 2rem 2rem;
+}
+
+/* Special Offers */
+
+.special-offers {
+    background: linear-gradient(135deg, var(--warm-white), var(--beige));
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    margin-top: 3rem;
+}
+
+.offers-title {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.offer-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: var(--transition);
+}
+
+.offer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.offer-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    font-size: 1.75rem;
+}
+
+.offer-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.offer-card p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.offer-discount {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+/* ========================================
+   ORGANIC BUSINESS
+======================================== */
+
+.organic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.organic-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.organic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px var(--shadow);
+}
+
+.organic-card.coming-soon {
+    opacity: 0.9;
+}
+
+.organic-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    color: white;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+
+.organic-title {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.coming-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px rgba(45, 122, 110, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(45, 122, 110, 0.3);
+    }
+    50% {
+        box-shadow: 0 6px 20px rgba(45, 122, 110, 0.5);
+    }
+}
+
+.organic-description {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.organic-details {
+    background-color: var(--warm-white);
+    padding: 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--text-gray);
+}
+
+.detail-item i {
+    color: var(--primary-color);
+}
+
+.organic-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.organic-features li {
+    padding: 0.75rem 0;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.organic-features i {
+    color: var(--primary-color);
+}
+
+.organic-cta {
+    text-align: center;
+}
+
+/* ========================================
+   PROFILE
+======================================== */
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.profile-image {
+    text-align: center;
+    position: sticky;
+    top: 120px;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    color: white;
+    border-radius: 50%;
+    font-size: 8rem;
+    box-shadow: 0 8px 24px var(--shadow);
+}
+
+.profile-name {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.profile-role {
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+.profile-details {
+    background-color: white;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.profile-details h4 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.profile-career {
+    margin-bottom: 3rem;
+}
+
+.career-list {
+    list-style: none;
+}
+
+.career-list li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.career-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.career-icon {
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+}
+
+.career-content strong {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.career-content p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+.profile-skills {
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: var(--warm-white);
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.skill-badge:hover {
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.skill-badge i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.skill-badge span {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.profile-message blockquote {
+    background-color: var(--warm-white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+    color: var(--text-gray);
+    line-height: 2;
+}
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+    color: white;
+    border-radius: 50%;
+    font-size: 1.75rem;
+}
+
+.contact-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.contact-card p {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    color: var(--dark-green);
+}
+
+.store-hours p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-gray);
+    margin-bottom: 0.5rem;
+}
+
+.store-hours i {
+    color: var(--primary-color);
+}
+
+.online-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.contact-form-wrapper {
+    background-color: white;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.required {
+    color: #FF6B6B;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 122, 110, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--warm-white);
+    border-radius: 8px;
+}
+
+.form-note i {
+    color: var(--primary-color);
+    margin-top: 0.125rem;
+}
+
+.form-note p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 3rem 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.footer-logo .logo-image-footer {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+.footer-logo i {
+    font-size: 1.5rem;
+    color: var(--light-green);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   SCROLL TO TOP
+======================================== */
+
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px var(--shadow);
+    z-index: 999;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media screen and (max-width: 968px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - 80px);
+        background-color: white;
+        box-shadow: -2px 0 12px var(--shadow);
+        transition: right 0.3s ease;
+        padding: 3rem 2rem;
+    }
+
+    .nav-menu.show {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-item {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .profile-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .profile-image {
+        position: static;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid,
+    .business-cards,
+    .organic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .mobile-break {
+        display: inline;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .business-card,
+    .service-card,
+    .organic-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero-badges {
+        flex-direction: column;
+    }
+
+    .badge {
+        width: 100%;
+        justify-content: center;
+    }
+}
